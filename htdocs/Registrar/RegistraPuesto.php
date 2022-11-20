@@ -10,7 +10,7 @@
         <input class="form-control" id="nombre" placeholder="Gerente" name="nombre">
     </div>
     
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" name="registrar">Submit</button>
     </form>
 </div>
 <?php include("../Components/footer.php");?>
