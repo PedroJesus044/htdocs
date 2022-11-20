@@ -3,7 +3,7 @@
     <form action="../Funciones/EscribeMecanico.php" method="POST">
     <div class="form-group">
         <label for="RFC">RFC</label>
-        <input class="form-control" id="RFC" placeholder="XXXX000000XXX" name="RFC" maxlength="13">
+        <input class="form-control" id="RFC" placeholder="XXXX000000XXX" name="RFC" maxlength='13'>
     </div>
     <div class="form-group">
         <label for="nombre">Nombre</label>
@@ -44,7 +44,7 @@
         </select>
     </div>
     
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" name='registrar'>Submit</button>
     </form>
 </div>
 <?php include("../Components/footer.php");?>
