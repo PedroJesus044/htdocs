@@ -2,7 +2,7 @@
 <div>
     <form action="../Funciones/EscribePuesto.php" method="POST">
     <div class="form-group">
-        <label for="placa">Cve_Puesto</label>
+        <label for="placa">Clave del puesto</label>
         <input class="form-control" id="cve_puesto" placeholder="123456" name="cve_puesto">
     </div>
     <div class="form-group">
