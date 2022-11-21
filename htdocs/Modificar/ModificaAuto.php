@@ -32,6 +32,7 @@
                 echo "<td><input class='form-control' name='marca' value='".$row["marca"]."'></td>";
                 echo "<td><input class='form-control' name='anio_fab' value='".$row["anio_fab"]."'></td>";
                 echo "<td><input class='form-control' name='modelo' value='".$row["modelo"]."'></td>";
+                echo "<td><input class='form-control' name='color' value='".$row["color"]."'></td>";
                 echo "<td> <button type='submit' class='btn btn-primary' name = 'modificar'>Modificar</button> </td>";
                 echo "<td> <button type='submit' class='btn btn-danger' name = 'eliminar'>Eliminar</button> </td>";
                 echo "</tr>";

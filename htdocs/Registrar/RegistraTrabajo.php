@@ -60,7 +60,7 @@
         <input class="form-control" id="horas_rep" placeholder="12.5" name="horas_rep">
     </div>
     <div class="form-group">
-        <label for="modelo">Fecha_Rep</label>
+        <label for="fecha_rep">Fecha de reparación</label>
         <input type="date" class="form-control" id="fecha_rep" name="fecha_rep">
     </div>
 

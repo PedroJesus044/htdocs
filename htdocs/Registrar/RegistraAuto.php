@@ -17,6 +17,10 @@
         <label for="modelo">Modelo</label>
         <input class="form-control" id="modelo" placeholder="Tsuru" name="modelo">
     </div>
+    <div class="form-group">
+        <label for="color">Color</label>
+        <input class="form-control" id="modelo" placeholder="Rojo" name="color">
+    </div>
     
     <button type="submit" class="btn btn-primary" name='registrar'>Submit</button>
     </form>
