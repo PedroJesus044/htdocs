@@ -12,11 +12,23 @@
      $cve_puesto = $_POST['cve_puesto'];
      $nombre = $_POST['nombre'];
 
-     $sql = "insert into auto (cve_puesto, nombre) values ('".$cve_puesto."', '".$nombre."')";
-     echo($sql);
- 
-     mysqli_query($conn, $sql);
- 
-     header("Location: ../Registrar/RegistraPuesto.php");
+     if(isset($_POST['registrar'])){
+          $sql = "insert into puesto (cve_puesto, nombre) values (".$cve_puesto.", '".$nombre."')";
+          echo($sql);
+          mysqli_query($conn, $sql);
+          header("Location: ../Registrar/RegistraPuesto.php");
+     }else if(isset($_POST['modificar'])){
+          $id = $_POST['id'];
+          echo "Modificando<br>";
+          $sql = "UPDATE puesto SET cve_puesto = ".$cve_puesto.", nombre = '".$nombre."' WHERE cve_puesto = '".$id."';";
+          mysqli_query($conn, $sql);
+          header("Location: ../Modificar/ModificaPuesto.php");
+     }else if(isset($_POST['eliminar'])){
+          $id = $_POST['id'];
+          echo "Eliminando";
+          $sql = "DELETE FROM puesto WHERE cve_puesto = '".$id."';";
+          mysqli_query($conn, $sql);
+          header("Location: ../Modificar/ModificaPuesto.php");
+     }
      exit();
 ?>

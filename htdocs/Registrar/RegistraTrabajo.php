@@ -61,7 +61,7 @@
     </div>
     <div class="form-group">
         <label for="modelo">Fecha_Rep</label>
-        <input type="date" class="form-control" id="fecha_rep" placeholder="2022-02-02" name="fecha_rep">
+        <input type="date" class="form-control" id="fecha_rep" name="fecha_rep">
     </div>
 
     <button type="submit" class="btn btn-primary" name="registrar">Submit</button>

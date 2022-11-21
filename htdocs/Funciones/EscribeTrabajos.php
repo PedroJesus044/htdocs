@@ -10,26 +10,28 @@
     else echo "Connected successfully <br>";
 
     $ID = $_POST['ID'];
+    $placa = $_POST['placa'];
     $RFC = $_POST['RFC'];
     $horas_rep = $_POST['horas_rep'];
     $fecha_rep = $_POST['fecha_rep'];
 
     if(isset($_POST['registrar'])){
-        $sql = "insert into trabajos (ID, RFC, horas_rep, fecha_rep) values ('".$ID."', '".$RFC."', ".$horas_rep.", '".$fecha_rep."')";
+        $sql = "insert into trabajos (ID, placa, RFC, horas_rep, fecha_rep) values ('".$ID."', '".$placa."','".$RFC."', ".$horas_rep.", '".$fecha_rep."')";
         echo($sql);
         mysqli_query($conn, $sql);
         header("Location: ../Registrar/RegistraTrabajo.php");
     }else if(isset($_POST['modificar'])){
         $id = $_POST['id'];
         echo "Modificando<br>";
-        $sql = "UPDATE auto SET placa = '".$placa."', marca = '".$marca."', anio_fab = ".$anio_fab.", modelo='".$modelo."' WHERE placa = '".$id."';";
+        $sql = "UPDATE trabajos SET ID = '".$ID."', placa = '".$placa."', RFC = '".$RFC."', horas_rep='".$horas_rep."', fecha_rep = '".$fecha_rep."' WHERE ID = '".$id."';";
+        echo $sql;
         mysqli_query($conn, $sql);
-        header("Location: ../Modificar/ModificaAuto.php");
+        header("Location: ../Modificar/ModificaTrabajo.php");
     }else if(isset($_POST['eliminar'])){
         $id = $_POST['id'];
         echo "Eliminando";
-        $sql = "DELETE FROM auto WHERE placa = '".$id."';";
+        $sql = "DELETE FROM trabajos WHERE ID = '".$id."';";
         mysqli_query($conn, $sql);
-        header("Location: ../Modificar/ModificaAuto.php");
+        header("Location: ../Modificar/ModificaTrabajo.php");
     }
 ?>
