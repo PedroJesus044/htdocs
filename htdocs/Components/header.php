@@ -63,6 +63,7 @@
                         <li><a href="/Reportes/ClientesAccidentes.php" class="dropdown-item">Listado de accidentes</a> </li>
                         <li><a href="/Reportes/ListadoTrabajos.php" class="dropdown-item">Listado de trabajos</a> </li>
                         <li><a href="/Reportes/TalleresAccidentes.php" class="dropdown-item">Listado de atención a accidentes</a> </li>
+                        <li><a href="/Reportes/ReporteTiempoPromedio.php" class="dropdown-item">Tiempo promedio de reparación</a> </li>
                     </ul>
                     </li>
                 </ul>
